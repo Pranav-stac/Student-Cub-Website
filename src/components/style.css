@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+body {
+  font-family: 'Syne Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: 80px 10px;
+}
+
+video {
+  width: 40vw;
+  height: 30vw;
+  margin: 2rem;
+  background: #2c3e50;
+}
+/* Add this CSS to your style.css file */
+.video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.video-frame {
+  width: 45%;
+  margin: 0 10px;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.control-button {
+  margin: 10px; /* Adds distance between buttons */
+  padding: 10px 20px;
+  background-color: #007bff; /* Default button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.control-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.control-button:disabled {
+  background-color: #cccccc; /* Disabled button color */
+  cursor: not-allowed;
+}

@@ -1,0 +1,139 @@
+.my-courses {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  padding: 10%;
+  background-color: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.course-options {
+  display: flex;
+  justify-content: center; /* Center align the buttons */
+  margin-bottom: 20px;
+}
+
+.course-options button {
+  background-color: grey; /* Purple background color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px; /* Add margin between buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.course-options button:hover {
+  background-color: #1a1a2e; /* Darker purple background on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.course-options button.selected {
+  background: #00173d;
+  /* Darker purple background for selected button */
+}
+
+.selected-course {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.course {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.course h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.status-button {
+  background-color: #e0e0e0; /* Light grey background color */
+  color: #424242; /* Dark grey text color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.status-button.not-started {
+  background-color: #e0e0e0; /* Light grey background color for not started status */
+  color: black; /* Dark grey text color */
+}
+
+.status-button.ongoing {
+  background-color: #ffeb3b; /* Yellow background color for ongoing status */
+  color: black; /* Dark yellow text color */
+}
+
+.status-button.complete {
+  background-color: #4caf50; /* Green background color for complete status */
+  color: black; /* White text color */
+}
+
+.status-button:hover {
+  background-color: #757575; /* Darker grey background on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

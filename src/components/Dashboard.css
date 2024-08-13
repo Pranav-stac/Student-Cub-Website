@@ -1,0 +1,74 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px; /* Reduce padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-section {
+  width: 100%;
+}
+.progress-section h1 {
+  margin-bottom: 20px; /* Increase margin */
+  font-size: 1.2em; /* Increase font size */
+  color: black; /* Dark teal text color */
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+.course-progress-container {
+  display: flex;
+  flex-direction: row; /* Make the dashboard horizontal */
+  flex-wrap: wrap; /* Allow wrapping if there are many courses */
+  justify-content: space-around;
+}
+
+.course-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; /* Reduce margin between courses */
+}
+
+.course-progress h3 {
+  margin-top: 5px; /* Reduce space between progress bar and course name */
+  font-size: 1em; /* Reduce font size */
+}
+
+.progress-bar {
+  width: 150px; /* Reduce width for the progress bar */
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  height: 30px; /* Reduce height */
+}
+
+.progress {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #76c7c0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+  font-size: 0.8em; /* Further reduce font size */
+}
+
+.low {
+  background-color: #ff4d4d;
+}
+
+.medium {
+  background-color: #ffcc00;
+}
+
+.high {
+  background-color: #76c7c0;
+}

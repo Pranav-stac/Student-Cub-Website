@@ -1,0 +1,133 @@
+.home {
+  display: flex;
+  padding-left: 275px; /* Add left padding */
+  justify-content: center;
+  padding-top: 10%;
+  align-items: center;
+}
+
+.sidebar {
+  flex: 0 0 250px; /* Increase the width of the sidebar */
+  background-color: #00796b; /* Dark teal background color */
+  color: #ecf0f1; /* Light text color */
+  padding: 20px;
+}
+
+.sidebar a {
+  color: #ecf0f1; /* Light text color for links */
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: #004d40; /* Darker teal background on hover */
+}
+
+.main-content {
+  flex: 4; /* Adjust flex to allow more space for the main content */
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevent overflow */
+  margin-right: 20px; /* Add space between main content and news section */
+}
+
+.header {
+  display: flex;
+  flex-direction: row; /* Align image and reminders horizontally */
+  justify-content: space-between; /* Add space between image and reminders */
+  margin-bottom: 20px; /* Increase margin */
+}
+
+.image-section {
+  flex: 1;
+  margin-right: 20px; /* Increase space between image and reminders */
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Increase max height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 8px; /* Add border radius */
+  transition: transform 0.3s ease-in-out; /* Add animation */
+}
+
+.header-image:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.reminders-section {
+  flex: 1;
+  width: 100%; /* Increase width */
+  background-color: #ffffff; /* White background */
+  padding: 20px; /* Increase padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.reminders-section h2 {
+  margin-bottom: 20px; /* Increase margin */
+  color: black; /* Dark teal text color */
+}
+
+.reminder-item {
+  background-color: #e0f7fa; /* Light blue background color */
+  padding: 10px; /* Increase padding */
+  margin-bottom: 10px; /* Increase margin */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add animation */
+}
+
+.reminder-item:hover {
+  transform: translateY(-5px);
+  background-color: #b2ebf2; /* Change background color on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Increase margin */
+}
+
+.content {
+  flex: 1;
+  width: 100%; /* Increase width */
+  /* Other styles */
+}
+
+.news-section {
+  flex: 0 0 250px; /* Increase the width of the news section */
+  padding: 20px; /* Increase padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 0; /* Prevent overflow */
+  animation: slideIn 1s ease-in-out; /* Add slide-in animation */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
